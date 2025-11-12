@@ -1,0 +1,24 @@
+git init
+echo "todo.txt" > .gitignore
+git add .
+git status
+git branch -m master main
+git status
+git branch feature-login
+git branch -c feature-login
+git commit -m "First commit"
+git branch feature-login
+git checkou feature-login
+git checkout feature-login
+git add app.py
+git commit -m "Second commit: feature-login"
+git branch checkout main
+git status
+git checkout main
+git add app.py
+git commit -m "Third commit: main branch change"
+git merge feature-login
+git merge feature-login
+git remote add origin https://github.com/DeanK-1/ca1ex2-repo.git
+git push -u origin main
+git pull
